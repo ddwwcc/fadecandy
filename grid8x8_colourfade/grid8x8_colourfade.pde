@@ -41,7 +41,17 @@ void draw()
       }
     }
   }
+  
   background(current_colour[0], current_colour[1], current_colour[2]);
 
+  float change_rate = map(mouseX, 0, width, 5, 100);
+  
+  frameRate(change_rate);
+  
+  textAlign(CENTER);
+  
+  text("<- Mouse controls colour change speed ->", width/2, 20);
+
+  text((int) change_rate, width/2, height - 20);
 
 }
