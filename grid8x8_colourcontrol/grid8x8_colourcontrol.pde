@@ -74,18 +74,18 @@ void mouseDragged()
 {
   if ((mouseX > 0) && (mouseX < (width / 3)))
   {
-    desired_colour[0] = map(constrain(mouseY, 0, height), 0, 255, 0, height);
+    desired_colour[0] = map(constrain(mouseY, 0, height), 0, 255, height, 0);
   }
 
   if ((mouseX > ((width / 3)+1) && (mouseX < ((width / 3) * 2))))
   {
-    desired_colour[1] = map(constrain(mouseY, 0, height), 0, 255, 0, height);
+    desired_colour[1] = map(constrain(mouseY, 0, height), 0, 255, height, 0);
   }
 
   if ((mouseX > (((width / 3) * 2) + 1)) && (mouseX < width ))
   {
     //desired_colour[2] = map(mouseY, 0, height, 0, 255);
-    desired_colour[2] = map(constrain(mouseY, 0, height), 0, 255, 0, height);
+    desired_colour[2] = map(constrain(mouseY, 0, height), 0, 255, height, 0);
   }
 
 }
@@ -94,18 +94,18 @@ void mouseClicked()
 {
   if ((mouseX > 0) && (mouseX < (width / 3)))
   {
-    desired_colour[0] = map(constrain(mouseY, 0, height), 0, 255, 0, height);
+    desired_colour[0] = map(constrain(mouseY, 0, height), 0, 255, height, 0);
   }
 
   if ((mouseX > ((width / 3)+1) && (mouseX < ((width / 3) * 2))))
   {
-    desired_colour[1] = map(constrain(mouseY, 0, height), 0, 255, 0, height);
+    desired_colour[1] = map(constrain(mouseY, 0, height), 0, 255, height, 0);
   }
 
   if ((mouseX > (((width / 3) * 2) + 1)) && (mouseX < width ))
   {
     //desired_colour[2] = map(mouseY, 0, height, 0, 255);
-    desired_colour[2] = map(constrain(mouseY, 0, height), 0, 255, 0, height);
+    desired_colour[2] = map(constrain(mouseY, 0, height), 0, 255, height, 0);
   }
 
 }
